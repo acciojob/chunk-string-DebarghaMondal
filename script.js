@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-if (str === '' || isNaN(size)){
+if (str === null || str === '' || isNaN(size)){
 	return [];
 }
 	 return str.match(new RegExp('.{1,' + size + '}', 'g'));
